@@ -1,0 +1,20 @@
+/* loader.css */
+
+.loading-letter {
+  display: inline-block; /* Hace que cada letra sea un bloque en línea */
+  color: #4ade80; /* Color verde */
+  opacity: 0; /* Inicialmente, las letras son invisibles */
+  transform: translateY(20px); /* Mueve cada letra hacia abajo */
+  animation: fadeInUp 0.5s forwards; /* Aplicamos la animación */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(20px); /* Comienza abajo */
+  }
+  100% {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Se mueve a su posición original */
+  }
+}
